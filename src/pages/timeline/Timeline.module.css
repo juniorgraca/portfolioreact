@@ -1,0 +1,198 @@
+.containerTimeline {
+  height: 100vh;
+  display: flex;
+  background-color: rgba(204, 204, 204, 0.953);
+}
+.timeline {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.timelineText {
+  background-color: #db141436;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.startTimeline {
+  font-size: 3rem;
+  color: #515b54;
+  width: 100%;
+}
+.textInitialTimeline {
+  font-size: 3rem;
+  color: #3e9055;
+  width: 100%;
+}
+
+.colorAwesome {
+  color: aliceblue;
+}
+.timelineBody {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.initialTimeline {
+  width: 1140px;
+  background-color: #ffffff;
+  color: #535353;
+  margin-top: 60px;
+}
+
+.lefContainer {
+  display: flex;
+}
+.lefContainerGround {
+  background: linear-gradient(
+    248.67deg,
+    #535353 -49.37%,
+    rgba(83, 83, 83, 0.239178) 60.37%,
+    rgba(83, 83, 83, 0) 131.38%
+  );
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  width: 400px;
+  height: 150px;
+  background: linear-gradient(
+        rgba(255, 255, 255, 0.573),
+        rgba(255, 255, 255, 0.573)
+      )
+      padding-box,
+    linear-gradient(to right top, #3e9055, #009076, #008d9d, #0087bf, #007bd2)
+      border-box;
+  border-radius: 2em;
+  border: 4px solid transparent;
+}
+.textContainer {
+  margin: 20px 15px 30px 15px;
+}
+.titleTagL {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  margin-top: -10px;
+  margin-left: 40px;
+  border: 4px solid transparent;
+  background: linear-gradient(
+      to right top,
+
+      #008d9d,
+      #0087bf,
+      #007bd2
+    )
+    border-box;
+  color: #ffffff;
+  outline: 2px solid #4a67c9;
+  position: absolute;
+  z-index: 1000;
+  border-radius: 10px;
+}
+.titleCommentL {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 160px;
+  margin-top: -10px;
+  border: 4px solid transparent;
+  background: linear-gradient(to right top, #3e9055, #009076, #008d9d)
+    border-box;
+  color: #ffffff;
+  outline: 2px solid #ffffff;
+  position: absolute;
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+.lefContainer {
+  margin-left: 1px;
+  float: left;
+}
+.icon {
+  background: linear-gradient(
+      to right top,
+      #3e9055,
+      #009076,
+      #008d9d,
+      #0087bf,
+      #007bd2
+    )
+    border-box;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  padding-left: 10px;
+  color: #ffffff;
+  outline: 3px solid #4a67c9;
+  position: absolute;
+  z-index: 1000;
+  margin-left: 365px;
+  margin-top: 40px;
+}
+.iconRig {
+  background: linear-gradient(
+      to right top,
+      #3e9055,
+      #009076,
+      #008d9d,
+      #0087bf,
+      #007bd2
+    )
+    border-box;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  color: #ffffff;
+  outline: 3px solid #4a67c9;
+  position: absolute;
+  z-index: 1000;
+  margin-top: 45px;
+  margin-left: -30px;
+}
+.rightContainer {
+  float: right;
+}
+
+.textContainerRig {
+  margin-left: 40px;
+  margin-top: 15px;
+  margin-right: 9px;
+}
+.iconRigJoom {
+  background: linear-gradient(
+      to right top,
+      #3e9055,
+      #009076,
+      #008d9d,
+      #0087bf,
+      #007bd2
+    )
+    border-box;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  color: #ffffff;
+  outline: 3px solid #4a67c9;
+  position: absolute;
+  z-index: 1000;
+  margin-top: 45px;
+  margin-left: -30px;
+  padding-left: 10px;
+}
+.titleCommentLDes {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 200px;
+  margin-top: -10px;
+  border: 4px solid transparent;
+  background: linear-gradient(to right top, #3e9055, #009076, #008d9d)
+    border-box;
+  color: #ffffff;
+  outline: 2px solid #ffffff;
+  position: absolute;
+  z-index: 1000;
+  border-radius: 10px;
+}

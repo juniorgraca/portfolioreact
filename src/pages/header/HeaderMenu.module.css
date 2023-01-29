@@ -1,0 +1,69 @@
+.headerInicial {
+  background-image: linear-gradient(
+    to right top,
+    #3e9055,
+    #009076,
+    #008d9d,
+    #0087bf,
+    #007bd2
+  );
+
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+}
+.containerHeader {
+  color: #fff;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.locale {
+  margin-top: 30px;
+  font-size: 1.3rem;
+}
+.textContent {
+  margin-top: 20px;
+}
+.helo {
+  font-size: 2rem;
+}
+.name {
+  font-size: 8rem;
+}
+.descr {
+  font-size: 4rem;
+}
+.initialText {
+  margin-top: 10px;
+  font-size: 1.4rem;
+}
+.btn {
+  width: 130px;
+  height: 35px;
+  color: #6c6c6c;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: #ffffff00;
+  border: #000000 1px solid;
+  outline-style: solid;
+  outline-width: 1px;
+  margin-right: 15px;
+  margin-top: 25px;
+  -webkit-transition: background 1.1s 0s ease-in-out;
+  -moz-transition: background 1.1s 0s ease-in-out;
+  -o-transition: background 1.1s 0s ease-in-out;
+  transition: background 1.1s 0s ease-in-out;
+}
+.btn p {
+  color: #ffffff;
+  -webkit-transition: color 1.1s 0s ease-in-out;
+  -moz-transition: color 1.1s 0s ease-in-out;
+  -o-transition: color 1.1s 0s ease-in-out;
+  transition: color 1.1s 0s ease-in-out;
+}
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.361);
+  color: #3e9055;
+}
