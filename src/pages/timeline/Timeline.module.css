@@ -1,10 +1,8 @@
 .containerTimeline {
-  height: 100vh;
   display: flex;
   background-color: rgba(204, 204, 204, 0.953);
 }
 .timeline {
-  height: 100vh;
   max-width: 1140px;
   margin: 0 auto;
   margin-top: 35px;
@@ -243,14 +241,30 @@
   margin-left: -26px;
 }
 .iconJs {
-  margin-top: 45px;
+  margin-top: 25px;
   margin-left: 365px;
 }
 
 .lefphp {
   background-color: #007bd2;
 }
-.lineJs,
+.lineJs {
+  width: 180px;
+  height: 3px;
+  background: linear-gradient(
+      to right top,
+      #3e9055,
+      #009076,
+      #008d9d,
+      #0087bf,
+      #007bd2
+    )
+    border-box;
+  position: absolute;
+  margin-left: 390px;
+  margin-top: 55px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 .lineDsg,
 .lineBlogger {
   width: 180px;
