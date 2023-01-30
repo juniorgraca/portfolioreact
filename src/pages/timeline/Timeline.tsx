@@ -16,17 +16,21 @@ export const Timeline = () => {
           </div>
 
           <div className={styles.initialTimeline}>
-            <div className={styles.lefContainer}>
-              <div className={styles.icon}>
+            <div className={styles.lefBlogger}>
+              <div className={styles.dot}></div>
+              <div className={styles.iconBlogger}>
                 <p className="fa-3x">
                   <i className="fa-brands fa-blogger-b"></i>
                 </p>
               </div>
-              <div className={styles.titleTagL}>Blogger</div>
-              <div className={styles.titleCommentL}>Um Garoto curioso </div>
-              <div className={styles.circle}></div>
-              <div className={styles.lefContainerGround}>
-                <p className={styles.textContainer}>
+              <div className={styles.lineBlogger}></div>
+              <div className={styles.titleTagBlogger}>Blogger</div>
+              <div className={styles.titleCommentBlogger}>
+                Um Garoto curioso
+              </div>
+              <div className={styles.circleBlogger}></div>
+              <div className={styles.lefContainerBlogger}>
+                <p className={styles.textContainerBlogger}>
                   Tudo que eu fazia antes voltado para "telas" era o que sabia
                   sobre o então blogger, apaixonado por Templates. Já fazia
                   minhas primeiras modificações no HTML e no CSS.
@@ -34,72 +38,76 @@ export const Timeline = () => {
               </div>
             </div>
 
-            <div className={styles.rightContainer}>
-              <div className={styles.iconRig}>
+            <div className={styles.lefPhp}>
+              <div className={styles.iconPhp}>
                 <p className="fa-3x">
-                  <i className="fa-brands fa-php"></i>
+                  <i className="fa-regular fa-file-powerpoint"></i>
                 </p>
               </div>
-              <div className={styles.titleTagL}>PHP</div>
-              <div className={styles.titleCommentL}>Primeiro Contato </div>
-              <div className={styles.circle}></div>
-              <div className={styles.lefContainerGround}>
-                <p className={styles.textContainerRig}>
+              <div className={styles.linePhp}></div>
+              <div className={styles.titleTagPhp}>PHP</div>
+              <div className={styles.titleCommentPhp}>Primeiro Contato </div>
+              <div className={styles.circlePhp}></div>
+              <div className={styles.lefContainerPhp}>
+                <p className={styles.textContainerPhp}>
                   Com o conhecimento na criação de Bloggers, tive contato pela
                   primeira vez com ma linguagem de programação, o PHP, onde tive
-                  pouco proveito, porém, foi uma experiência muito legal..
+                  pouco proveito, porém, foi uma experiência muito legal.
                 </p>
               </div>
             </div>
 
-            <div className={styles.lefContainer}>
-              <div className={styles.icon}>
+            <div className={styles.lefContainerDsg}>
+              <div className={styles.iconDsg}>
                 <p className="fa-3x">
                   <i className="fa-solid fa-pen-nib"></i>
                 </p>
               </div>
-              <div className={styles.titleTagL}>Designer Gráfico</div>
-              <div className={styles.titleCommentLDes}>O tão esperado </div>
+              <div className={styles.lineDsg}></div>
+              <div className={styles.titleTagDsg}>Designer Gráfico</div>
+              <div className={styles.titleCommentDsg}>O tão esperado </div>
               <div className={styles.circle}></div>
               <div className={styles.lefContainerGround}>
-                <p className={styles.textContainer}>
+                <p className={styles.textContainerDsg}>
                   O Exército Brasileiro me proporcionou um dos cursos que mais
                   queria, o curso de Designer Gráfico, concluindo o curso eu já
-                  sábia o que queria fazer, então foi só começar a me dedicar..
+                  sábia o que queria fazer, então foi só começar a me dedicar.
                 </p>
               </div>
             </div>
 
-            <div className={styles.rightContainer}>
-              <div className={styles.iconRigJoom}>
+            <div className={styles.lefJoom}>
+              <div className={styles.iconJoom}>
                 <p className="fa-3x">
                   <i className="fa-brands fa-joomla"></i>
                 </p>
               </div>
-              <div className={styles.titleTagL}>Joomla</div>
-              <div className={styles.titleCommentL}>Dinâmica </div>
+              <div className={styles.lineJoom}></div>
+              <div className={styles.titleTagJoom}>Joomla</div>
+              <div className={styles.titleCommentJoom}>Dinâmica </div>
               <div className={styles.circle}></div>
-              <div className={styles.lefContainerGround}>
-                <p className={styles.textContainerRig}>
+              <div className={styles.lefContainerJoom}>
+                <p className={styles.textContainerJoom}>
                   O Exército Brasileiro novamente me proporcionou um curso
                   voltado para criação de site dinâmicos e responsivos, com o
                   curso de Designer Gráfico comecei a pôr em prática meus
-                  conhecimentos..
+                  conhecimentos.
                 </p>
               </div>
             </div>
 
             <div className={styles.lefContainer}>
-              <div className={styles.icon}>
+              <div className={styles.iconJs}>
                 <p className="fa-3x">
                   <i className="fa-brands fa-square-js"></i>
                 </p>
               </div>
-              <div className={styles.titleTagL}>Javascript</div>
-              <div className={styles.titleCommentL}>O queridinho </div>
+              <div className={styles.lineJs}></div>
+              <div className={styles.titleTagJs}>Javascript</div>
+              <div className={styles.titleCommentJs}>O queridinho </div>
               <div className={styles.circle}></div>
-              <div className={styles.lefContainerGround}>
-                <p className={styles.textContainer}>
+              <div className={styles.lefContainerJs}>
+                <p className={styles.textContainerJs}>
                   Então cheguei ao tão esperado JavaScript, com um pouco de
                   dificuldade, porem nada que eu não pudesse aprender.
                 </p>
@@ -107,7 +115,6 @@ export const Timeline = () => {
             </div>
           </div>
         </div>
-        <div></div>
       </div>
     </section>
   );

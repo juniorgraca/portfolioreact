@@ -4,21 +4,22 @@
   background-color: rgba(204, 204, 204, 0.953);
 }
 .timeline {
+  height: 100vh;
   max-width: 1140px;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 35px;
 }
+
 .timelineText {
-  background-color: #db141436;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
 .startTimeline {
-  font-size: 3rem;
+  font-size: 2.4rem;
   color: #515b54;
-  width: 100%;
+  transform: skew(3deg, -2deg);
 }
 .textInitialTimeline {
   font-size: 3rem;
@@ -33,20 +34,70 @@
   position: relative;
   max-width: 1140px;
   margin: 0 auto;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 .initialTimeline {
   width: 1140px;
-  background-color: #ffffff;
   color: #535353;
-  margin-top: 60px;
+  margin-top: 15px;
+  height: 100%;
+  position: relative;
+  display: block;
 }
 
-.lefContainer {
+.initialTimeline::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: linear-gradient(
+        rgba(255, 255, 255, 0.573),
+        rgba(255, 255, 255, 0.573)
+      )
+      padding-box,
+    linear-gradient(to right top, #3e9055, #009076, #008d9d, #0087bf, #007bd2)
+      border-box;
+  border-radius: 2em;
+  border: 2px solid transparent;
+  z-index: 100;
+  left: 50%;
+  display: block;
+}
+.dot {
+  width: 25px;
+  height: 25px;
+  outline: 3px solid #4a67c9;
+  background: linear-gradient(
+      to right top,
+      #3e9055,
+      #009076,
+      #008d9d,
+      #0087bf,
+      #007bd2
+    )
+    border-box;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 560px;
+  z-index: 800;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.lefBlogger {
   display: flex;
 }
-.lefContainerGround {
+.lefPhp,
+.lefJoom {
+  display: flex;
+  margin-left: 750px;
+  padding-top: 0px;
+}
+.lefContainerBlogger,
+.lefContainerPhp,
+.lefContainerDsg,
+.lefContainerJoom,
+.lefContainerJs {
   background: linear-gradient(
     248.67deg,
     #535353 -49.37%,
@@ -55,7 +106,7 @@
   );
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   width: 400px;
-  height: 150px;
+  height: fit-content;
   background: linear-gradient(
         rgba(255, 255, 255, 0.573),
         rgba(255, 255, 255, 0.573)
@@ -66,23 +117,28 @@
   border-radius: 2em;
   border: 4px solid transparent;
 }
-.textContainer {
-  margin: 20px 15px 30px 15px;
+
+.textContainerBlogger,
+.textContainerDsg,
+.textContainerJs {
+  margin: 25px 40px 20px 10px;
 }
-.titleTagL {
+
+.textContainerPhp,
+.textContainerJoom {
+  margin: 25px 10px 20px 40px;
+}
+
+.titleTagBlogger,
+.titleTagPhp,
+.titleTagJoom,
+.titleTagDsg,
+.titleTagJs {
   position: absolute;
   width: fit-content;
   height: fit-content;
-  margin-top: -10px;
-  margin-left: 40px;
   border: 4px solid transparent;
-  background: linear-gradient(
-      to right top,
-
-      #008d9d,
-      #0087bf,
-      #007bd2
-    )
+  background: linear-gradient(to right top, #008d9d, #0087bf, #007bd2)
     border-box;
   color: #ffffff;
   outline: 2px solid #4a67c9;
@@ -90,7 +146,31 @@
   z-index: 1000;
   border-radius: 10px;
 }
-.titleCommentL {
+.titleTagBlogger {
+  margin-left: 70px;
+  margin-top: -10px;
+}
+.titleTagPhp {
+  margin-left: 100px;
+  margin-top: -10px;
+}
+.titleTagJoom {
+  margin-left: 100px;
+  margin-top: -10px;
+}
+.titleTagDsg {
+  margin-left: 70px;
+  margin-top: -10px;
+}
+.titleTagJs {
+  margin-left: 70px;
+  margin-top: -10px;
+}
+.titleCommentBlogger,
+.titleCommentPhp,
+.titleCommentJoom,
+.titleCommentDsg,
+.titleCommentJs {
   position: absolute;
   width: fit-content;
   height: fit-content;
@@ -105,12 +185,27 @@
   z-index: 1000;
   border-radius: 10px;
 }
-
-.lefContainer {
-  margin-left: 1px;
-  float: left;
+.titleCommentBlogger {
+  margin-left: 150px;
 }
-.icon {
+.titleCommentDsg {
+  margin-left: 220px;
+}
+.titleCommentJs {
+  margin-left: 170px;
+}
+.titleCommentPhp {
+  margin-left: 150px;
+}
+.titleCommentJoom {
+  margin-left: 180px;
+}
+.iconBlogger,
+.iconPhp,
+.iconDsg,
+.iconJoom,
+.iconJs {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background: linear-gradient(
       to right top,
       #3e9055,
@@ -124,43 +219,42 @@
   height: 60px;
   border-radius: 100%;
   padding-left: 10px;
-  color: #ffffff;
+  color: #ffffffa0;
   outline: 3px solid #4a67c9;
   position: absolute;
   z-index: 1000;
-  margin-left: 365px;
+}
+.iconBlogger {
   margin-top: 40px;
+  margin-left: 365px;
 }
-.iconRig {
-  background: linear-gradient(
-      to right top,
-      #3e9055,
-      #009076,
-      #008d9d,
-      #0087bf,
-      #007bd2
-    )
-    border-box;
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
-  color: #ffffff;
-  outline: 3px solid #4a67c9;
-  position: absolute;
-  z-index: 1000;
+.iconPhp {
   margin-top: 45px;
-  margin-left: -30px;
+  margin-left: -26px;
+  padding-left: 12px;
 }
-.rightContainer {
-  float: right;
+.iconDsg {
+  margin-top: 40px;
+  margin-left: 365px;
 }
 
-.textContainerRig {
-  margin-left: 40px;
-  margin-top: 15px;
-  margin-right: 9px;
+.iconJoom {
+  margin-top: 45px;
+  margin-left: -26px;
 }
-.iconRigJoom {
+.iconJs {
+  margin-top: 45px;
+  margin-left: 365px;
+}
+
+.lefphp {
+  background-color: #007bd2;
+}
+.lineJs,
+.lineDsg,
+.lineBlogger {
+  width: 180px;
+  height: 3px;
   background: linear-gradient(
       to right top,
       #3e9055,
@@ -170,29 +264,27 @@
       #007bd2
     )
     border-box;
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
-  color: #ffffff;
-  outline: 3px solid #4a67c9;
   position: absolute;
-  z-index: 1000;
-  margin-top: 45px;
-  margin-left: -30px;
-  padding-left: 10px;
+  margin-left: 390px;
+  margin-top: 70px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.titleCommentLDes {
-  position: absolute;
-  width: fit-content;
-  height: fit-content;
-  margin-left: 200px;
-  margin-top: -10px;
-  border: 4px solid transparent;
-  background: linear-gradient(to right top, #3e9055, #009076, #008d9d)
+
+.linePhp,
+.lineJoom {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  width: 180px;
+  height: 3px;
+  background: linear-gradient(
+      to right top,
+      #3e9055,
+      #009076,
+      #008d9d,
+      #0087bf,
+      #007bd2
+    )
     border-box;
-  color: #ffffff;
-  outline: 2px solid #ffffff;
   position: absolute;
-  z-index: 1000;
-  border-radius: 10px;
+  margin-left: -180px;
+  margin-top: 75px;
 }

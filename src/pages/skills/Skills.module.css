@@ -1,0 +1,5 @@
+.skillsContainer {
+  height: 100vh;
+  display: flex;
+  background-color: rgba(141, 6, 6, 0.953);
+}
