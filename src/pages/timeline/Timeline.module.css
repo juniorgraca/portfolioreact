@@ -1,6 +1,7 @@
 .containerTimeline {
   display: flex;
   background-color: rgba(204, 204, 204, 0.953);
+  padding-bottom: 150px;
 }
 .timeline {
   max-width: 1140px;
@@ -17,7 +18,6 @@
 .startTimeline {
   font-size: 2.4rem;
   color: #515b54;
-  transform: skew(3deg, -2deg);
 }
 .textInitialTimeline {
   font-size: 3rem;
@@ -301,4 +301,18 @@
   position: absolute;
   margin-left: -180px;
   margin-top: 75px;
+}
+
+.arrow {
+  color: #3e9055;
+  position: absolute;
+  margin-top: 735px;
+  margin-left: 558px;
+  z-index: 800;
+}
+.timelineTextEnd {
+  text-align: center;
+  margin-top: 35px;
+  font-size: 2rem;
+  color: #ffffff;
 }

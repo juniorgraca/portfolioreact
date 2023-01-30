@@ -16,6 +16,11 @@ export const Timeline = () => {
           </div>
 
           <div className={styles.initialTimeline}>
+            <div className={styles.arrow}>
+              <p className="fa-2x">
+                <i className="fa-solid fa-angle-down"></i>
+              </p>
+            </div>
             <div className={styles.lefBlogger}>
               <div className={styles.dot}></div>
               <div className={styles.iconBlogger}>
@@ -115,6 +120,7 @@ export const Timeline = () => {
             </div>
           </div>
         </div>
+        <div className={styles.timelineTextEnd}>Não é o Fim !</div>
       </div>
     </section>
   );
