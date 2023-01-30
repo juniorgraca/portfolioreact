@@ -1,3 +1,17 @@
+.menuContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+.contact {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
 .headerInicial {
   background-image: linear-gradient(
     to right top,
@@ -19,7 +33,7 @@
   margin: 0 auto;
 }
 .locale {
-  margin-top: 30px;
+  margin-top: 250px;
   font-size: 1.3rem;
 }
 .textContent {

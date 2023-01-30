@@ -5,7 +5,7 @@ export const HeaderMenu = () => {
     <section className={styles.headerInicial}>
       <div className={styles.containerHeader}>
         <div className={styles.menuContainer}>
-          <div className={styles.logo}> logo</div>
+          <div className={styles.logo}> Junior Carlos</div>
           <div className={styles.contact}>
             <p>CONTACT</p>
           </div>
