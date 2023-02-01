@@ -1,5 +1,5 @@
 import styles from "./HeaderMenu.module.css";
-
+import backg from "/src/backg.svg";
 export const HeaderMenu = () => {
   return (
     <section className={styles.headerInicial}>
@@ -22,23 +22,20 @@ export const HeaderMenu = () => {
           <p className={styles.initialText}>
             Sou desenvolvedor front-end e designer gráfico. Possuo experiência
             em desenvolvimento, além de habilidades em design gráfico, como
-            criação de layouts e edição de imagens.{" "}
+            criação de layouts e edição de imagens.
           </p>
           <button className={styles.btn}>
-            {" "}
             <p>Linkedin</p>
-          </button>{" "}
+          </button>
           <button className={styles.btn}>
-            {" "}
             <p>GitHub</p>
           </button>
           <button className={styles.btn}>
-            {" "}
             <p>Contato</p>
           </button>
-          <div></div>
         </div>
       </div>
+      <div className={styles.imgbo}></div>
     </section>
   );
 };

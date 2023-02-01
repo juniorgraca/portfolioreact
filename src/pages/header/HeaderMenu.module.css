@@ -13,19 +13,13 @@
   font-weight: 500;
 }
 .headerInicial {
-  background-image: linear-gradient(
-    to right top,
-    #3e9055,
-    #009076,
-    #008d9d,
-    #0087bf,
-    #007bd2
-  );
-
+  background-image: url("./src/backg.svg"),
+    linear-gradient(to right top, #3e9055, #009076, #008d9d, #0087bf, #007bd2);
+  background-repeat: no-repeat;
+  background-position: bottom;
   margin: 0;
   padding: 0;
   height: 100vh;
-  display: flex;
 }
 .containerHeader {
   color: #fff;
@@ -33,7 +27,7 @@
   margin: 0 auto;
 }
 .locale {
-  margin-top: 250px;
+  margin-top: 100px;
   font-size: 1.3rem;
 }
 .textContent {
@@ -80,4 +74,7 @@
 .btn:hover {
   background-color: rgba(255, 255, 255, 0.361);
   color: #3e9055;
+}
+.body {
+  background: #333;
 }
