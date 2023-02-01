@@ -13,15 +13,15 @@ export const Projetos = () => {
               <div className={styles.containerProjects}>
                 <div className={styles.bodyProjectsLeft}>
                   <div className={styles.projectTest}>
-                    <div className={styles.title}>
-                      <h3>{item.title}</h3>
-                    </div>
                     <div
                       style={{
                         backgroundImage: `url(${item.img})`,
                       }}
                       className={styles.groundProjects}
                     ></div>
+                    <div className={styles.title}>
+                      <h3>{item.title}</h3>
+                    </div>
                     <p className={styles.textoProjects}>{item.description}</p>
                   </div>
                 </div>

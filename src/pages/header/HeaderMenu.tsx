@@ -1,12 +1,18 @@
+import { useState, useEffect } from "react";
 import styles from "./HeaderMenu.module.css";
+import "./Menu.css";
 import backg from "/src/backg.svg";
-export const HeaderMenu = () => {
+type bar = {
+  navBar: boolean;
+};
+
+export const HeaderMenu = ({ navBar }) => {
   return (
     <section className={styles.headerInicial}>
       <div className={styles.containerHeader}>
         <div className={styles.menuContainer}>
           <div className={styles.logo}> Junior Carlos</div>
-          <div className={styles.contact}>
+          <div className={navBar ? "contact" : "junior"}>
             <p>CONTACT</p>
           </div>
         </div>
