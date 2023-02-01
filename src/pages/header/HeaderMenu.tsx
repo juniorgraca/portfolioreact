@@ -6,7 +6,7 @@ type bar = {
   navBar: boolean;
 };
 
-export const HeaderMenu = ({ navBar }) => {
+export const HeaderMenu = ({ navBar }: bar) => {
   return (
     <section className={styles.headerInicial}>
       <div className={styles.containerHeader}>
