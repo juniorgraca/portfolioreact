@@ -7,13 +7,25 @@ type bar = {
 };
 
 export const HeaderMenu = ({ navBar }: bar) => {
+  const [contact, setContact] = useState<boolean>(false);
+  const handleClick = () => {
+    console.log("test");
+  };
   return (
     <section className={styles.headerInicial}>
       <div className={styles.containerHeader}>
         <div className={styles.menuContainer}>
           <div className={styles.logo}> Junior Carlos</div>
-          <div className={navBar ? "contact" : "junior"}>
-            <p>CONTACT</p>
+          <div className={navBar ? "menuOn" : "menuOf"}>
+            {" "}
+            <p className="fa-2x">
+              <i className="fa-solid fa-bars"></i>
+            </p>
+          </div>
+          <div className={navBar ? "contact" : "contactRmv"}>
+            <div className="test" onClick={handleClick}>
+              <p>Contact</p>
+            </div>
           </div>
         </div>
         <div className={styles.inicialContent}>
@@ -31,10 +43,17 @@ export const HeaderMenu = ({ navBar }: bar) => {
             criação de layouts e edição de imagens.
           </p>
           <button className={styles.btn}>
-            <p>Linkedin</p>
+            <a
+              href="https://www.linkedin.com/in/j%C3%BAnior-carlos-b22094240/"
+              target="_blank"
+            >
+              <p>Linkedin</p>
+            </a>
           </button>
           <button className={styles.btn}>
-            <p>GitHub</p>
+            <a href="https://github.com/carlosjr-dev" target="_blank">
+              <p>GitHub</p>
+            </a>
           </button>
           <button className={styles.btn}>
             <p>Contato</p>
