@@ -9,17 +9,6 @@
   font-weight: bold;
 }
 
-.headerInicial {
-  background-image: url("/src/img/backg.svg"),
-    linear-gradient(to right top, #3e9055, #009076, #008d9d, #0087bf, #007bd2);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  min-height: 100vh;
-  min-width: 100vh;
-}
 .containerHeader {
   color: #fff;
   max-width: 1140px;

@@ -2,8 +2,9 @@
   position: fixed;
   padding: 7px 0px;
   margin-left: 1300px;
-  width: 130px;
-  height: 35px;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px 10px;
   color: #fff;
   font-size: 1.1rem;
   text-align: center;
@@ -12,7 +13,7 @@
   margin-right: 15px;
   margin-top: 25px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  animation: myAnim 1s ease 0s 1 normal forwards;
+  animation: myAnim 1s ease 1s 1 normal forwards;
   font-weight: 500;
   cursor: pointer;
 }
@@ -52,8 +53,13 @@
   background-position: bottom;
   height: 100%;
   width: 100%;
-  position: fixed;
   z-index: 1004;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
 }
 
 .formRead {
@@ -77,4 +83,36 @@
 .testBtn {
   background-color: rebeccapurple;
   height: 300px;
+}
+.btnCont {
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px solid transparent;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.headerInicial {
+  background-image: url("/src/img/backg.svg"),
+    linear-gradient(to right top, #3e9055, #009076, #008d9d, #0087bf, #007bd2);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  min-height: 100vh;
+  min-width: 100vh;
+}
+.headerAfter {
+  background-image: url("/src/img/backg.svg"),
+    linear-gradient(to right top, #3e9055, #009076, #008d9d, #0087bf, #007bd2);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  min-height: 100vh;
+  min-width: 100vh;
+  overflow-y: hidden;
 }

@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef, AreaHTMLAttributes } from "react";
+import Contact from "../contact/Contact";
 import styles from "./HeaderMenu.module.css";
 import "./Menu.css";
 import backg from "/src/backg.svg";
@@ -9,28 +10,46 @@ type bar = {
 export const HeaderMenu = ({ navBar }: bar) => {
   const [contact, setContact] = useState<boolean>(false);
 
-  /*  const Scroltrava = () => {
-    if (window.scrollY > 0) {
-      window.scrollTo(0, 0);
+  const handleScrollTest = (event: any) => {
+    if (scrollY >= 0) {
+      scrollTo(0, 0);
     }
   };
-  const Scrolsolta = () => {
-    if (window.scrollY > 0) {
-    }
-  };
-*/
-  var handleClick = () => {
+  /*   const handlePromise = (): Promise<void> => {
+    return new Promise((resolve) => {
+      if (scrollY > 0 && setContact) {
+        resolve(console.log("urangutago"));
+      }
+    });
+  }; */
+
+  /*   const executeFunction = () => {
+    console.log("Function executed!");
+  }; */
+
+  /*   const handleScroll = (event: any) => {
+    handlePromise();
+  }; */
+  useEffect(() => {}, [contact]);
+
+  const handleContact = () => {
     setContact(true);
   };
 
-  var handleClickOff = () => {
+  const handleClickPai = (event: React.MouseEvent) => {
+    event.stopPropagation();
     setContact(false);
   };
+
+  const handleClickFilho = (event: React.MouseEvent) => {
+    event.stopPropagation();
+  };
+
   return (
     <>
       {contact ? (
-        <div className="contactAlou" onClick={handleClickOff}>
-          <div className="formRead">
+        <div className="contactAlou" onClick={handleClickPai}>
+          <div className="formRead" onClick={handleClickFilho}>
             <h2>Vamos conversar</h2>
             <p>
               Entrarei em contato com você via e-mail, não esqueça de verificar
@@ -43,7 +62,7 @@ export const HeaderMenu = ({ navBar }: bar) => {
         ""
       )}
 
-      <section className={styles.headerInicial}>
+      <section className={contact ? "headerAfter" : "headerInicial"}>
         <div className={styles.containerHeader}>
           <div className={styles.menuContainer}>
             <div className={styles.logo}> Junior Carlos</div>
@@ -53,9 +72,9 @@ export const HeaderMenu = ({ navBar }: bar) => {
               </p>
             </div>
             <div className={navBar ? "contact" : "contactRmv"}>
-              <div className="test" onClick={handleClick}>
-                <p>Contact</p>
-              </div>
+              <button onClick={handleContact} className="btnCont">
+                Contact
+              </button>
             </div>
           </div>
           <div className={styles.inicialContent}>
