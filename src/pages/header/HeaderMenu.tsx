@@ -4,12 +4,10 @@ import "./Menu.css";
 import backg from "/src/backg.svg";
 type bar = {
   navBar: boolean;
-  noWrap: boolean;
 };
 
 export const HeaderMenu = ({ navBar }: bar) => {
   const [contact, setContact] = useState<boolean>(false);
-  const [noWrap, setNoWrap] = useState<boolean>(false);
 
   /*  const Scroltrava = () => {
     if (window.scrollY > 0) {
@@ -23,12 +21,10 @@ export const HeaderMenu = ({ navBar }: bar) => {
 */
   var handleClick = () => {
     setContact(true);
-    setNoWrap(true);
   };
 
   var handleClickOff = () => {
     setContact(false);
-    setNoWrap(false);
   };
   return (
     <>
