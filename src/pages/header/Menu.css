@@ -44,3 +44,37 @@
   background-color: rebeccapurple;
   visibility: hidden;
 }
+
+.contactAlou {
+  background-image: url("/src/img/backg.svg"),
+    linear-gradient(to right top, #3e9055, #009076, #008d9d, #0087bf, #007bd2);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1004;
+}
+
+.formRead {
+  background-color: #fff;
+  max-width: 1140px;
+  height: 90vh;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+  z-index: 1003;
+}
+.formRead h2 {
+  text-align: center;
+  padding-top: 30px;
+}
+.formRead p {
+  text-align: center;
+  padding-top: 60px;
+}
+.testBtn {
+  background-color: rebeccapurple;
+  height: 300px;
+}
