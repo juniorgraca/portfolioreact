@@ -15,21 +15,6 @@ export const HeaderMenu = ({ navBar }: bar) => {
       scrollTo(0, 0);
     }
   };
-  /*   const handlePromise = (): Promise<void> => {
-    return new Promise((resolve) => {
-      if (scrollY > 0 && setContact) {
-        resolve(console.log("urangutago"));
-      }
-    });
-  }; */
-
-  /*   const executeFunction = () => {
-    console.log("Function executed!");
-  }; */
-
-  /*   const handleScroll = (event: any) => {
-    handlePromise();
-  }; */
   useEffect(() => {}, [contact]);
 
   const handleContact = () => {
